@@ -4,7 +4,7 @@
 import configparser
 import io
 import os
-from typing import Dict, List, Tuple
+from typing import Set, Tuple
 
 from UM.VersionUpgrade import VersionUpgrade
 
@@ -27,7 +27,7 @@ _EXPERIMENTAL_QUALITY_PROFILES = {
     "um_s5_aa0.8_PC_Verydraft_Print",
     "um_s5_aa0.8_aluminum_CPEP_Fast_Print",
     "um_s5_aa0.8_aluminum_PC_Fast_Print",
-}  # type: Dict[str, str]
+}  # type: Set[str]
 
 
 ##  Upgrades configurations from the state they were in at version 3.4 to the
