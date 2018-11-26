@@ -4,7 +4,7 @@
 import configparser
 import io
 import os
-from typing import Set, Tuple
+from typing import List, Set, Tuple
 
 from UM.VersionUpgrade import VersionUpgrade
 
@@ -32,7 +32,7 @@ _EXPERIMENTAL_QUALITY_PROFILES = {
 
 ##  Upgrades configurations from the state they were in at version 3.4 to the
 #   state they should be in at version 3.5.
-class VersionUpgrade34to35(VersionUpgrade):
+class VersionUpgrade36to40(VersionUpgrade):
     ##  Gets the version number from a CFG file in Uranium's 3.3 format.
     #
     #   Since the format may change, this is implemented for the 3.3 format only

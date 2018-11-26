@@ -8,7 +8,7 @@ from . import VersionUpgrade36to40
 if TYPE_CHECKING:
     from UM.Application import Application
 
-upgrade = VersionUpgrade36to40.VersionUpgrade34to35()
+upgrade = VersionUpgrade36to40.VersionUpgrade36to40()
 
 def getMetaData() -> Dict[str, Any]:
     return {
