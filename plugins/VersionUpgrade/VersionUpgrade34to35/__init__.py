@@ -17,6 +17,7 @@ def getMetaData() -> Dict[str, Any]:
             ("preferences", 6000004):        ("preferences", 6000005,        upgrade.upgradePreferences),
 
             ("definition_changes", 4000004): ("definition_changes", 4000005, upgrade.upgradeInstanceContainer),
+            ("variant", 4000004):            ("variant", 4000005,            upgrade.upgradeInstanceContainer),
             ("quality_changes", 4000004):    ("quality_changes", 4000005,    upgrade.upgradeInstanceContainer),
             ("quality", 4000004):            ("quality", 4000005,            upgrade.upgradeInstanceContainer),
             ("user", 4000004):               ("user", 4000005,               upgrade.upgradeInstanceContainer),
@@ -40,6 +41,10 @@ def getMetaData() -> Dict[str, Any]:
             "definition_changes": {
                 "get_version": upgrade.getCfgVersion,
                 "location": {"./definition_changes"}
+            },
+            "variant": {
+                "get_version": upgrade.getCfgVersion,
+                "location": {"./variants"}
             },
             "quality_changes": {
                 "get_version": upgrade.getCfgVersion,
