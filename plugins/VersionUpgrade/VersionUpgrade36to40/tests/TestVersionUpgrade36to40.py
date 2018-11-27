@@ -9,7 +9,7 @@ import VersionUpgrade36to40 #The module we're testing.
 ##  Creates an instance of the upgrader to test with.
 @pytest.fixture
 def upgrader():
-    return VersionUpgrade36to40.VersionUpgrade34to35()
+    return VersionUpgrade36to40.VersionUpgrade36to40()
 
 test_upgrade_test_cases = [
     {"file_name": "Empty config file",
